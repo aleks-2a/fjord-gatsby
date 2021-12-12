@@ -6,6 +6,8 @@ subtitle: >-
   and styles for your content.
 featuredImage: ../images/style-guide.jpg
 featuredImage_alt: Style Guide
+og_image: ../images/style-guide.jpg
+twitter_image: ../images/style-guide.jpg
 seo:
   title: Theme Style Guide
   description: A reference for suggested typographic treatment and styles for your content
@@ -22,7 +24,7 @@ seo:
         content
       keyName: property
     - name: 'og:image'
-      value: images/style-guide.jpg
+      value: 1
       keyName: property
       relativeUrl: true
     - name: 'twitter:card'
@@ -34,7 +36,7 @@ seo:
         A reference for suggested typographic treatment and styles for your
         content
     - name: 'twitter:image'
-      value: images/style-guide.jpg
+      value: 1
       relativeUrl: true
 template: page
 ---

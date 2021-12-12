@@ -1,4 +1,13 @@
-const siteMetadata = require('./site-metadata.json')
+if (process.env.GATSBY_ACTIVE_ENV) {
+  require("dotenv").config({
+    path: `.env.${process.env.GATSBY_ACTIVE_ENV}`,
+  })
+} else {
+  require("dotenv").config({
+    path: `.env.local`,
+  })
+}
+const siteMetadata = require('./site-metadata.json');
 
 module.exports = {
     pathPrefix: '/',

@@ -4,6 +4,8 @@ subtitle: This is a short page about me and my work
 img_path: images/about.jpg
 featuredImage: ../images/about.jpg
 featuredImage_alt: This is a short page about me and my work
+og_image: ../images/about.jpg
+twitter_image: ../images/about.jpg
 seo:
   title: About Me
   description: A page about me and my work
@@ -18,7 +20,7 @@ seo:
       value: A page about me and my work
       keyName: property
     - name: 'og:image'
-      value: images/about.jpg
+      value: 1
       keyName: property
       relativeUrl: true
     - name: 'twitter:card'
@@ -28,7 +30,7 @@ seo:
     - name: 'twitter:description'
       value: A page about me and my work
     - name: 'twitter:image'
-      value: images/about.jpg
+      value: 1
       relativeUrl: true
 template: page
 ---

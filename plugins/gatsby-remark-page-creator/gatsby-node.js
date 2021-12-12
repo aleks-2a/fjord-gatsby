@@ -87,6 +87,24 @@ exports.createPages = ({graphql, getNode, actions, getNodesByType}) => {
                   )
                 }
               }
+            	og_image {
+                childImageSharp {
+            			gatsbyImageData(
+                    width: 1920
+                    placeholder: BLURRED
+                    formats: [AUTO, WEBP, AVIF]
+                  )
+                }
+              }
+            	twitter_image {
+                childImageSharp {
+            			gatsbyImageData(
+                    width: 1920
+                    placeholder: BLURRED
+                    formats: [AUTO, WEBP, AVIF]
+                  )
+                }
+              }
             }
           }
         }
@@ -129,6 +147,8 @@ exports.createPages = ({graphql, getNode, actions, getNodesByType}) => {
                 name: node.fields.name,
                 frontmatter: node.frontmatter,
                 featuredImage: graphQLNode.frontmatter.featuredImage,
+                og_image: graphQLNode.frontmatter.og_image,
+                twitter_image: graphQLNode.frontmatter.twitter_image,
                 html: graphQLNode.html
             };
         });
@@ -162,6 +182,8 @@ exports.createPages = ({graphql, getNode, actions, getNodesByType}) => {
                     name: node.fields.name,
                     frontmatter: node.frontmatter,
                     featuredImage: graphQLNode.frontmatter.featuredImage,
+                    og_image: graphQLNode.frontmatter.og_image,
+                    twitter_image: graphQLNode.frontmatter.twitter_image,
                     html: graphQLNode.html,
                     pages: pages,
                     site: {

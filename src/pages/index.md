@@ -2,6 +2,8 @@
 title: Home
 has_more_link: true
 more_link_text: Keep reading
+og_image: ../images/home.jpg
+twitter_image: ../images/home.jpg
 seo:
   title: Stackbit Fjord Theme
   description: The preview of the Fjord theme
@@ -16,7 +18,7 @@ seo:
       value: The preview of the Fjord theme
       keyName: property
     - name: 'og:image'
-      value: images/home.jpg
+      value: 1
       keyName: property
       relativeUrl: true
     - name: 'twitter:card'
@@ -26,7 +28,7 @@ seo:
     - name: 'twitter:description'
       value: The preview of the Fjord theme
     - name: 'twitter:image'
-      value: images/home.jpg
+      value: 1
       relativeUrl: true
 template: home
 ---

@@ -7,6 +7,8 @@ excerpt: >-
 date: '2019-04-09'
 featuredImage: ../../images/1.jpg
 featuredImage_alt: A man standing on a rock cliff overlooking a river
+og_image: ../../images/1.jpg
+twitter_image: ../../images/1.jpg
 seo:
   title: Basic Rules For Walking In The Mountains
   description: >-
@@ -25,7 +27,7 @@ seo:
         bushes.
       keyName: property
     - name: 'og:image'
-      value: images/1.jpg
+      value: 1
       keyName: property
       relativeUrl: true
     - name: 'twitter:card'
@@ -37,7 +39,7 @@ seo:
         Hiking refers to difficult walking through dense forest, undergrowth, or
         bushes.
     - name: 'twitter:image'
-      value: images/1.jpg
+      value: 1
       relativeUrl: true
 template: post
 ---

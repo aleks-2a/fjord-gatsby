@@ -9,6 +9,8 @@ excerpt: >-
 date: '2018-01-15'
 featuredImage: ../../images/8.jpg
 featuredImage_alt: A man looking at a beautiful lake and mountains landscape in Switzerland
+og_image: ../../images/8.jpg
+twitter_image: ../../images/8.jpg
 seo:
   title: What Is Photography and What It Means To Me
   description: A intresting tale about Photography and me
@@ -23,7 +25,7 @@ seo:
       value: A intresting tale about Photography and me
       keyName: property
     - name: 'og:image'
-      value: images/8.jpg
+      value: 1
       keyName: property
       relativeUrl: true
     - name: 'twitter:card'
@@ -33,7 +35,7 @@ seo:
     - name: 'twitter:description'
       value: A intresting tale about Photography and me
     - name: 'twitter:image'
-      value: images/8.jpg
+      value: 1
       relativeUrl: true
 template: post
 ---

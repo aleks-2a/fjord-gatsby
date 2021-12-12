@@ -2,6 +2,8 @@
 title: Get in Touch
 featuredImage: ../images/contact.jpg
 featuredImage_alt: Get in Touch
+og_image: ../images/contact.jpg
+twitter_image: ../images/contact.jpg
 form_id: contactForm
 form_action: /success
 form_fields:
@@ -47,7 +49,7 @@ seo:
       value: This is the contact page
       keyName: property
     - name: 'og:image'
-      value: images/contact.jpg
+      value: 1
       keyName: property
       relativeUrl: true
     - name: 'twitter:card'
@@ -57,7 +59,7 @@ seo:
     - name: 'twitter:description'
       value: This is the contact page
     - name: 'twitter:image'
-      value: images/contact.jpg
+      value: 1
       relativeUrl: true
 template: contact
 ---

@@ -32,7 +32,7 @@ seo:
         sanctuaries.
       keyName: property
     - name: 'og:image'
-      value: images/10.jpg
+      value: 1
       keyName: property
       relativeUrl: true
     - name: 'twitter:card'
@@ -44,7 +44,7 @@ seo:
         Apparently, Japan is covered in magical and irresistibly cute animal
         sanctuaries.
     - name: 'twitter:image'
-      value: images/10.jpg
+      value: 1
       relativeUrl: true
 template: post
 ---

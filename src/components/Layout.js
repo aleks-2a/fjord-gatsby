@@ -5,6 +5,8 @@ import _ from 'lodash';
 import {withPrefix, attribute} from '../utils';
 import '../sass/main.scss';
 
+import { getSrc, GatsbyImage } from "gatsby-plugin-image";
+
 export default class Body extends React.Component {
     render() {
         return (
@@ -22,18 +24,29 @@ export default class Body extends React.Component {
                         let key_name = _.get(meta, 'keyName', null) || 'name';
                         return (
                           _.get(meta, 'relativeUrl', null) ? (
-                            _.get(this.props, 'pageContext.site.siteMetadata.domain', null) && ((() => {
-                                let domain = _.trim(_.get(this.props, 'pageContext.site.siteMetadata.domain', null), '/');
-                                let rel_url = withPrefix(_.get(meta, 'value', null));
-                                let full_url = domain + rel_url;
-                                return (
-                                  <meta key={meta_idx} {...(attribute(key_name, _.get(meta, 'name', null)))} content={full_url}/>
-                                );
+                            process.env.GATSBY_SITE_URL && ((() => {
+                                let placeholderImage = null;
+                                if(_.get(meta, 'name', null) === 'og:image' && _.get(meta, 'value', null) === 1){
+                                  placeholderImage = _.get(this.props, 'pageContext.og_image', null) ? _.get(this.props.pageContext.og_image.childImageSharp, 'gatsbyImageData', null) : null;
+                                }
+                                if(_.get(meta, 'name', null) === 'twitter:image'  && _.get(meta, 'value', null) === 1){
+                                  placeholderImage = _.get(this.props, 'pageContext.twitter_image', null) ? _.get(this.props.pageContext.twitter_image.childImageSharp, 'gatsbyImageData', null) : null;
+                                }
+                                if(placeholderImage){
+                                  let image = getSrc(placeholderImage);
+                                  let domain = process.env.GATSBY_SITE_URL;
+                                  let rel_url = image;
+                                  let full_url = domain + rel_url;
+                                  return (
+                                    <meta key={meta_idx} {...(attribute(key_name, _.get(meta, 'name', null)))} content={full_url}/>
+                                  );
+                                }
                             })())
-                          ) : 
+                          ) :
                             <meta key={meta_idx + '.1'} {...(attribute(key_name, _.get(meta, 'name', null)))} content={_.get(meta, 'value', null)}/>
                         )
                     })}
+                    // TODO : load font locally
                     <link rel="preconnect" href="https://fonts.gstatic.com"/>
                     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"/>
                     {_.get(this.props, 'pageContext.site.siteMetadata.favicon', null) && (

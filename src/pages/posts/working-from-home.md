@@ -7,6 +7,8 @@ excerpt: >-
 date: '2016-08-22'
 featuredImage: ../../images/9.jpg
 featuredImage_alt: Home office setup
+og_image: ../../images/9.jpg
+twitter_image: ../../images/9.jpg
 seo:
   title: The Advantages and Disadvantages of Working from Home
   description: >-
@@ -25,7 +27,7 @@ seo:
         integrates parenting into his or her business activities
       keyName: property
     - name: 'og:image'
-      value: images/9.jpg
+      value: 1
       keyName: property
       relativeUrl: true
     - name: 'twitter:card'
@@ -37,7 +39,7 @@ seo:
         Work at home parent is an entrepreneur who works from home and
         integrates parenting into his or her business activities
     - name: 'twitter:image'
-      value: images/9.jpg
+      value: 1
       relativeUrl: true
 template: post
 ---

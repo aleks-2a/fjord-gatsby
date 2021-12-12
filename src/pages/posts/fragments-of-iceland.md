@@ -7,6 +7,8 @@ excerpt: >-
 date: '2018-01-09'
 featuredImage: ../../images/7.jpg
 featuredImage_alt: Icelandic horses
+og_image: ../../images/7.jpg
+twitter_image: ../../images/7.jpg
 hide_header: true
 seo:
   title: Fragments of Iceland
@@ -24,7 +26,7 @@ seo:
         Ocean.
       keyName: property
     - name: 'og:image'
-      value: images/7.jpg
+      value: 1
       keyName: property
       relativeUrl: true
     - name: 'twitter:card'
@@ -36,7 +38,7 @@ seo:
         Iceland is a Nordic country between the North Atlantic and the Arctic
         Ocean.
     - name: 'twitter:image'
-      value: images/7.jpg
+      value: 1
       relativeUrl: true
 template: post
 ---

@@ -10,6 +10,8 @@ excerpt: >-
 date: '2018-01-23'
 featuredImage: ../../images/5.jpg
 featuredImage_alt: Brooklyn Bridge at daytime
+og_image: ../../images/5.jpg
+twitter_image: ../../images/5.jpg
 seo:
   title: Few Things I Wish I Knew Before I Moved to New York
   description: A cautionary tale about life in New York
@@ -24,7 +26,7 @@ seo:
       value: A cautionary tale about life in New York
       keyName: property
     - name: 'og:image'
-      value: images/5.jpg
+      value: 1
       keyName: property
       relativeUrl: true
     - name: 'twitter:card'
@@ -34,7 +36,7 @@ seo:
     - name: 'twitter:description'
       value: A cautionary tale about life in New York
     - name: 'twitter:image'
-      value: images/5.jpg
+      value: 1
       relativeUrl: true
 template: post
 ---

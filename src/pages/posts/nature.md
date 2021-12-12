@@ -9,6 +9,8 @@ excerpt: >-
 date: '2019-03-24'
 featuredImage: ../../images/4.jpg
 featuredImage_alt: A man fishing in a lake
+og_image: ../../images/4.jpg
+twitter_image: ../../images/4.jpg
 hide_header: true
 seo:
   title: My Way to Relax in Nature and Stress Less
@@ -28,7 +30,7 @@ seo:
         mental health will recharge.
       keyName: property
     - name: 'og:image'
-      value: images/4.jpg
+      value: 1
       keyName: property
       relativeUrl: true
     - name: 'twitter:card'
@@ -40,7 +42,7 @@ seo:
         The way I spend time out in nature can affect how much my physical and
         mental health will recharge.
     - name: 'twitter:image'
-      value: images/4.jpg
+      value: 1
       relativeUrl: true
 template: post
 ---
