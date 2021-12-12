@@ -21,7 +21,7 @@ export default class Page extends React.Component {
     render() {
         return (
             <Layout {...this.props}>
-              <Header {...this.props} site={this.props.pageContext.site} page={this.props.pageContext} image={_.get(this.props, 'pageContext.frontmatter.img_path', null)} />
+              <Header {...this.props} site={this.props.pageContext.site} page={this.props.pageContext} />
               <div id="content" className="site-content">
                 <main id="main" className="site-main inner">
                   <article className="post page post-full">

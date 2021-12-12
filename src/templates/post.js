@@ -25,8 +25,8 @@ export default class Post extends React.Component {
             <Layout {...this.props}>
               {(_.get(this.props, 'pageContext.frontmatter.hide_header', null) === true) ? (
                 <HeaderAlt {...this.props} />
-              ) : 
-                <Header {...this.props} site={this.props.pageContext.site} page={this.props.pageContext} image={_.get(this.props, 'pageContext.frontmatter.content_img_path', null)} />
+              ) :
+                <Header {...this.props} site={this.props.pageContext.site} page={this.props.pageContext} />
               }
               <div id="content" className="site-content">
                 <main id="main" className="site-main inner">

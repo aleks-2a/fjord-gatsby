@@ -3,6 +3,7 @@ title: About Me
 subtitle: This is a short page about me and my work
 img_path: images/about.jpg
 featuredImage: ../images/about.jpg
+featuredImage_alt: This is a short page about me and my work
 seo:
   title: About Me
   description: A page about me and my work

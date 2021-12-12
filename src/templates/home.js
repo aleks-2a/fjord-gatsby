@@ -25,7 +25,7 @@ export default class Home extends React.Component {
         let posts_count = _.size(posts);
         return (
             <Layout {...this.props}>
-              <Header {...this.props} site={this.props.pageContext.site} page={this.props.pageContext} image={_.get(this.props, 'pageContext.site.siteMetadata.header.background_img', null)} />
+              <Header {...this.props} site={this.props.pageContext.site} page={this.props.pageContext} />
               <div id="content" className="site-content">
                 <main id="main" className="site-main inner">
                   <div className="post-feed">
@@ -35,6 +35,7 @@ export default class Home extends React.Component {
                           _.map(posts_sorted, (post, post_idx) => {
                             const placeholderImage = _.get(post, 'featuredImage', null) ? _.get(post.featuredImage.childImageSharp, 'gatsbyImageData', null) : null;
                             const image = getImage(placeholderImage);
+                            const imageAlt = _.get(post, 'frontmatter.featuredImage_alt', _.get(post, 'frontmatter.title', null));
                             return (
                               <article key={post_idx} className="post">
                                 <header className="post-header">
@@ -44,9 +45,9 @@ export default class Home extends React.Component {
                                       dateTime={moment(_.get(post, 'frontmatter.date', null)).strftime('%Y-%m-%d %H:%M')}>{moment(_.get(post, 'frontmatter.date', null)).strftime('%B %d, %Y')}</time>
                                   </div>
                                 </header>
-                                {_.get(post, 'frontmatter.thumb_img_path', null) && (
+                                {placeholderImage && (
                                 <Link className="post-thumbnail" to={withPrefix(_.get(post, 'url', null))}>
-                                  <GatsbyImage image={image} alt={_.get(post, 'frontmatter.title', null)} />
+                                  <GatsbyImage image={image} alt={imageAlt} />
                                 </Link>
                                 )}
                                 <div className="post-content">
