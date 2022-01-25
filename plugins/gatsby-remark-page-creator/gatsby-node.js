@@ -156,7 +156,7 @@ exports.createPages = ({graphql, getNode, actions, getNodesByType}) => {
         nodes.forEach(graphQLNode => {
             const node = getNode(graphQLNode.id);
             const url = node.fields.url;
-            
+
             const template = node.frontmatter.template;
             if (!template) {
                 console.error(`Error: undefined template for ${url}`);

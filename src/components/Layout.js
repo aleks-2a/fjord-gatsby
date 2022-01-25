@@ -5,7 +5,7 @@ import _ from 'lodash';
 import {withPrefix, attribute} from '../utils';
 import '../sass/main.scss';
 
-import { getSrc, GatsbyImage } from "gatsby-plugin-image";
+import { getSrc } from "gatsby-plugin-image";
 
 export default class Body extends React.Component {
     render() {
