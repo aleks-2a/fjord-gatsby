@@ -18,7 +18,7 @@ export {
     Layout
 };
 
-export default {
+const Index = {
     Branding,
     Footer,
     FormField,
@@ -28,3 +28,5 @@ export default {
     Navigation,
     Layout
 };
+
+export default Index;
