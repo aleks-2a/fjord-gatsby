@@ -3,7 +3,8 @@ import {Helmet} from 'react-helmet';
 import _ from 'lodash';
 
 import {withPrefix, attribute} from '../utils';
-import '../sass/main.scss';
+  import "@fontsource/gothic-a1";
+  import '../sass/main.scss';
 
 import { getSrc } from "gatsby-plugin-image";
 
@@ -46,9 +47,6 @@ export default class Body extends React.Component {
                             <meta key={meta_idx + '.1'} {...(attribute(key_name, _.get(meta, 'name', null)))} content={_.get(meta, 'value', null)}/>
                         )
                     })}
-                    // TODO : load font locally
-                    <link rel="preconnect" href="https://fonts.gstatic.com"/>
-                    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"/>
                     {_.get(this.props, 'pageContext.site.siteMetadata.favicon', null) && (
                     <link rel="icon" href={withPrefix(_.get(this.props, 'pageContext.site.siteMetadata.favicon', null))}/>
                     )}
