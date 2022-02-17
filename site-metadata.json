@@ -19,6 +19,11 @@
                 "style": "link"
             },
             {
+                "label": "Slideshows",
+                "url": "/slideshow",
+                "style": "link"
+            },
+            {
                 "label": "Style Guide",
                 "url": "/style-guide",
                 "style": "link"
