@@ -46,8 +46,15 @@ module.exports = {
         `gatsby-plugin-react-helmet`,
         `gatsby-source-data`,
         {
-            resolve: `gatsby-plugin-sass`,
-            options: {}
+          resolve: "gatsby-plugin-sass",
+          // options: {
+          //   useResolveUrlLoader: {
+          //     options: {
+          //       sourceMap: true, //default is false
+          //       debug: true,
+          //     },
+          //   },
+          // },
         },
         {
             resolve: `gatsby-remark-page-creator`,
