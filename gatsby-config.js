@@ -4,8 +4,6 @@ module.exports = {
     pathPrefix: '/',
     siteMetadata: siteMetadata,
     plugins: [
-        `gatsby-plugin-react-helmet`,
-        `gatsby-source-data`,
 				`gatsby-plugin-sharp`,
 				{
 					resolve: `gatsby-transformer-remark`,
@@ -14,11 +12,19 @@ module.exports = {
 							{
 								resolve: `gatsby-remark-images`,
 								options: {
-									maxWidth: 800,
+									maxWidth: 1920
 								},
 							},
 						],
 					},
+				},
+				`gatsby-transformer-sharp`,
+				{
+					resolve: `gatsby-source-filesystem`,
+					options: {
+						name: `images`,
+						path: `${__dirname}/src/images`,
+					}
 				},
         {
             resolve: `gatsby-source-filesystem`,
@@ -27,12 +33,8 @@ module.exports = {
                 path: `${__dirname}/src/pages`
             }
         },
-				{
-					resolve: `gatsby-source-filesystem`,
-					options: {
-						path: `${__dirname}/src/images`,
-					},
-				},
+        `gatsby-plugin-react-helmet`,
+        `gatsby-source-data`,
         {
             resolve: `gatsby-plugin-sass`,
             options: {}

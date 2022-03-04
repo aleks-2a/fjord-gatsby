@@ -77,8 +77,31 @@ exports.createPages = ({graphql, getNode, actions, getNodesByType}) => {
           node {
             id
             html
+            frontmatter {
+            	featuredImage {
+                childImageSharp {
+            			gatsbyImageData(
+                    width: 1920
+                    placeholder: BLURRED
+                    formats: [AUTO, WEBP, AVIF]
+                  )
+                }
+              }
+            }
           }
         }
+      }
+      file(relativePath: {eq: "header-bg.jpg"}) {
+      	name
+      	extension
+      	relativePath
+      	childImageSharp {
+      		gatsbyImageData(
+      			width: 1920
+      			placeholder: BLURRED
+      			formats: [AUTO, WEBP, AVIF]
+      		)
+      	}
       }
     }
     `).then(result => {
@@ -105,6 +128,7 @@ exports.createPages = ({graphql, getNode, actions, getNodesByType}) => {
                 base: node.fields.base,
                 name: node.fields.name,
                 frontmatter: node.frontmatter,
+                featuredImage: graphQLNode.frontmatter.featuredImage,
                 html: graphQLNode.html
             };
         });
@@ -137,6 +161,7 @@ exports.createPages = ({graphql, getNode, actions, getNodesByType}) => {
                     base: node.fields.base,
                     name: node.fields.name,
                     frontmatter: node.frontmatter,
+                    featuredImage: graphQLNode.frontmatter.featuredImage,
                     html: graphQLNode.html,
                     pages: pages,
                     site: {

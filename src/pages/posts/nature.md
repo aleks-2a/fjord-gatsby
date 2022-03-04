@@ -8,6 +8,7 @@ excerpt: >-
   health will recharge and how I benefit from it.
 date: '2019-03-24'
 thumb_img_path: images/4.jpg
+featuredImage: ../../images/4.jpg
 thumb_img_alt: A man fishing in a lake
 hide_header: true
 seo:

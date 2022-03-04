@@ -5,6 +5,7 @@ subtitle: >-
   The style guide is also a great reference for suggested typographic treatment
   and styles for your content.
 img_path: images/style-guide.jpg
+featuredImage: ../images/style-guide.jpg
 seo:
   title: Theme Style Guide
   description: A reference for suggested typographic treatment and styles for your content
