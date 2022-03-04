@@ -1,17 +1,19 @@
-# ✨ Stackbit Fjord Theme - Gatsby ✨
+# ✨ Stackbit Fjord Theme - Gatsby - Aleks2a Fork ✨
 
-This is a [Gatsby](https://gatsbyjs.com) theme using Git as a CMS. It was created with [Stackbit](https://www.stackbit.com?utm_source=theme-readme&utm_medium=referral&utm_campaign=stackbit_themes) in under a minute.
 
-This theme is deprecated and will no longer be maintained by Stackbit. 
-Stackbit launched a new major version that brings a superior developer experience and visual editing capabilities.
+This is a [Gatsby](https://gatsbyjs.com) theme using Git as a CMS. It was created from [Stackbit Fjord Theme](https://github.com/stackbit-themes/fjord-gatsby).
 
-Click the button below to create a new website using the new version of Stackbit.
+I added some improvements from the original project :
+* loading images with gatsby plugin to improve the page loading
+* moving Google fonts to self hosted fonts, compliant with GDPR rules
+* adding slideshows images
+* using GastbyJS v4.6
 
-[![Create with Stackbit](https://assets.stackbit.com/badge/create-with-stackbit.svg)](https://app.stackbit.com/create?utm_source=theme-readme&utm_medium=referral&utm_campaign=stackbit_themes)
+However, with this improvements, contents are only editable from Markdown.
 
 ## Contributing
 
-This repository is auto-generated and can not receive pull-requests. If you have any suggestions or feedback you are welcome to submit an issue.
+This repository is a first draft. Any pull request for any improvement (functional or code best practices) is welcome.
 
 ## Develop Locally
 
@@ -33,22 +35,4 @@ This repository is auto-generated and can not receive pull-requests. If you have
 
 ## Editing Content
 
-To start editing your site, you can edit the included Markdown files.
-
-Alternatively, create a new site with Stackbit from this theme and use the free on-page editing experience provided by the [Stackbit Studio](https://stackbit.com?utm_source=theme-readme&utm_medium=referral&utm_campaign=stackbit_themes).
-
-[![](https://i3.ytimg.com/vi/zd9lGRLVDm4/hqdefault.jpg)](https://stackbit.link/project-readme-lead-video)
-
-Here's a few resources to get you started:
-
-- 📺 &nbsp; [Editing Content](https://stackbit.link/project-readme-editing-video)
-- 📺 &nbsp; [Adding, Reordering and Deleting Items](https://stackbit.link/project-readme-adding-video)
-- 📺 &nbsp; [Collaboration](https://stackbit.link/project-readme-collaboration-video)
-- 📺 &nbsp; [Publishing](https://stackbit.link/project-readme-publishing-video)
-- 📚 &nbsp; [Stackbit Documentation](https://stackbit.link/project-readme-documentation)
-
-If you need a hand, make sure to check the [Stackbit support page](https://stackbit.link/project-readme-support).
-
-## Colophon
-
-Generated at `2021-07-13T20:45:47.134Z` by Stackbit version `0.3.53`.
+To start editing your site, you can edit the included Markdown files (src/pages/*/*.md).
